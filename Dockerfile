@@ -2,7 +2,7 @@
 
 # Use a base image with Java 17 installed
 # use another base image if you want to use a different Java version
-FROM adoptopenjdk/openjdk:17-alpine
+FROM openjdk:17-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
