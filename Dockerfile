@@ -5,10 +5,10 @@
 FROM openjdk:17-alpine
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /weatherapp_backend
 
 # Copy the .war file to the container
-COPY /weatherapp_backend/target/weatherapp_backend-0.0.1-SNAPSHOT.war /app/app.war
+COPY /target/weatherapp_backend-0.0.1-SNAPSHOT.war /app/app.war
 
 # Expose the port on which the Spring Boot application will run
 EXPOSE 8080
